@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dbpyi33c1lqqm"]
+[gd_scene load_steps=5 format=3 uid="uid://dbpyi33c1lqqm"]
 
 [ext_resource type="Texture2D" uid="uid://c2fkoarbcbew7" path="res://Assets/aaa-game-art-studio-219-03.jpg" id="1_emxc6"]
 [ext_resource type="Script" path="res://Scripts/aaa_game_art_studio_219_03.gd" id="2_20q8s"]
+[ext_resource type="Texture2D" uid="uid://dvgwoauls6bc8" path="res://Assets/Nprofile2.jpg" id="3_uoln3"]
+[ext_resource type="Script" path="res://Scenes/nprofile_2.gd" id="4_efy2s"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -10,3 +12,9 @@ position = Vector2(576, 323)
 scale = Vector2(0.6, 0.589335)
 texture = ExtResource("1_emxc6")
 script = ExtResource("2_20q8s")
+
+[node name="Nprofile2" type="Sprite2D" parent="."]
+position = Vector2(1034.5, 463.75)
+scale = Vector2(0.243333, 0.245)
+texture = ExtResource("3_uoln3")
+script = ExtResource("4_efy2s")
