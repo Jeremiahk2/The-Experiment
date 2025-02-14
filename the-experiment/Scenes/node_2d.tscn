@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbpyi33c1lqqm"]
+
+[ext_resource type="Texture2D" uid="uid://c2fkoarbcbew7" path="res://Assets/aaa-game-art-studio-219-03.jpg" id="1_emxc6"]
+[ext_resource type="Script" path="res://Scripts/aaa_game_art_studio_219_03.gd" id="2_20q8s"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Aaa-game-art-studio-219-03" type="Sprite2D" parent="."]
+position = Vector2(576, 323)
+scale = Vector2(0.6, 0.589335)
+texture = ExtResource("1_emxc6")
+script = ExtResource("2_20q8s")
