@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bfvipwputc1p6"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_3c2yc"]
-[ext_resource type="Texture2D" uid="uid://coxh2tn8mbp22" path="res://Assets/Menu image.jpg" id="2_ipw0m"]
+[ext_resource type="Texture2D" uid="uid://q0tmantxt4fx" path="res://Assets/MenuImage.png" id="2_2ryhs"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfptl"]
 bg_color = Color(0.6, 0.341176, 0.25098, 0.294118)
@@ -18,24 +18,41 @@ script = ExtResource("1_3c2yc")
 layout_mode = 0
 offset_left = 1.0
 offset_top = 3.0
-offset_right = 1157.0
-offset_bottom = 1027.0
-texture = ExtResource("2_ipw0m")
+offset_right = 1921.0
+offset_bottom = 1083.0
+texture = ExtResource("2_2ryhs")
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 402.0
-offset_top = 501.0
-offset_right = 742.0
-offset_bottom = 587.0
+offset_left = 1433.0
+offset_top = 772.0
+offset_right = 1773.0
+offset_bottom = 858.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_bfptl")
 text = "QUIT"
 
 [node name="Start" type="Button" parent="."]
 layout_mode = 0
-offset_left = 404.0
-offset_top = 377.0
-offset_right = 744.0
-offset_bottom = 462.0
+offset_left = 1431.0
+offset_top = 610.0
+offset_right = 1771.0
+offset_bottom = 695.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_kjq5o")
 text = "START"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 1305.0
+offset_top = 298.0
+offset_right = 1888.0
+offset_bottom = 532.0
+bbcode_enabled = true
+text = "[center][b][color=Black][font_size=32]
+
+Tales of Wyrmgate
+The Experiment
+
+
+[/font_size][/color][/b][/center]"
+fit_content = true
+scroll_active = false

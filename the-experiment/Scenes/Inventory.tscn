@@ -7,16 +7,22 @@
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_dn6uq")
-texture = ExtResource("2_mymja")
+test_texture = ExtResource("2_mymja")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 1035.0
-offset_top = 1.0
-offset_right = 1149.0
-offset_bottom = 646.0
+offset_left = 1920.0
+offset_right = 2129.0
+offset_bottom = 1086.0
 
 [node name="Collection" type="VBoxContainer" parent="Panel"]
 layout_mode = 0
-offset_right = 113.0
-offset_bottom = 644.0
+offset_right = 213.0
+offset_bottom = 1086.0
+
+[node name="ShowHide" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = -41.0
+offset_right = 1.0
+offset_bottom = 47.0
+text = ">"
