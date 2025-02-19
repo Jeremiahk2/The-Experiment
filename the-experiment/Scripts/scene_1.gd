@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var sprite = $CanvasLayer/Nprofile2  # Get reference to the character
+@onready var sprite = $CanvasLayer/S1O1  # Get reference to the character
 @export var sasuke: Texture  # SET THIS IN THE INSPECTOR TRIP ->
 
 # Called when the node enters the scene tree for the first time.

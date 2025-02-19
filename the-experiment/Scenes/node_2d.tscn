@@ -1,9 +1,23 @@
 [gd_scene load_steps=5 format=3 uid="uid://dbpyi33c1lqqm"]
 
 [ext_resource type="Texture2D" uid="uid://c2fkoarbcbew7" path="res://Assets/aaa-game-art-studio-219-03.jpg" id="1_emxc6"]
-[ext_resource type="Script" path="res://Scripts/aaa_game_art_studio_219_03.gd" id="2_20q8s"]
 [ext_resource type="Texture2D" uid="uid://dvgwoauls6bc8" path="res://Assets/Nprofile2.jpg" id="3_uoln3"]
-[ext_resource type="Script" path="res://Scenes/nprofile_2.gd" id="4_efy2s"]
+
+[sub_resource type="GDScript" id="GDScript_d80yh"]
+script/source = "extends Sprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="GDScript" id="GDScript_e85i2"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -11,7 +25,7 @@
 position = Vector2(576, 323)
 scale = Vector2(0.6, 0.589335)
 texture = ExtResource("1_emxc6")
-script = ExtResource("2_20q8s")
+script = SubResource("GDScript_d80yh")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -19,4 +33,4 @@ script = ExtResource("2_20q8s")
 position = Vector2(1034.5, 463.75)
 scale = Vector2(0.243333, 0.245)
 texture = ExtResource("3_uoln3")
-script = ExtResource("4_efy2s")
+script = SubResource("GDScript_e85i2")
