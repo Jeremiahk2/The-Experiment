@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfvipwputc1p6"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_3c2yc"]
+[ext_resource type="Texture2D" uid="uid://coxh2tn8mbp22" path="res://Assets/Menu image.jpg" id="2_ipw0m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfptl"]
+bg_color = Color(0.6, 0.341176, 0.25098, 0.294118)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjq5o"]
+bg_color = Color(0.6, 0.341176, 0.25098, 0.290196)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_3c2yc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 1157.0
+offset_bottom = 1027.0
+texture = ExtResource("2_ipw0m")
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 501.0
+offset_right = 742.0
+offset_bottom = 587.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_bfptl")
+text = "QUIT"
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 404.0
+offset_top = 377.0
+offset_right = 744.0
+offset_bottom = 462.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_kjq5o")
+text = "START"

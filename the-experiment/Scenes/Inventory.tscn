@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2mjalvkw6cxo"]
+
+[ext_resource type="Script" path="res://Scripts/inventory.gd" id="1_dn6uq"]
+[ext_resource type="Texture2D" uid="uid://cdo8mlu4k7jhs" path="res://icon.svg" id="2_mymja"]
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_dn6uq")
+texture = ExtResource("2_mymja")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 1035.0
+offset_top = 1.0
+offset_right = 1149.0
+offset_bottom = 646.0
+
+[node name="Collection" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 113.0
+offset_bottom = 644.0
