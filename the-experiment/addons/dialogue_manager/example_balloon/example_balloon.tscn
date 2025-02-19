@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://73jm5qjy52vq"]
 
-[ext_resource type="Script" uid="uid://d1wt4ma6055l8" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
-[ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -64,11 +64,13 @@ MarginContainer/constants/margin_top = 15
 Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
 
 [node name="ExampleBalloon" type="CanvasLayer"]
-layer = 100
+layer = 0
 script = ExtResource("1_36de5")
 
 [node name="Balloon" type="Control" parent="."]
 unique_name_in_owner = true
+visibility_layer = 8
+z_index = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -79,6 +81,8 @@ theme = SubResource("Theme_qq3yp")
 
 [node name="Panel" type="Panel" parent="Balloon"]
 clip_children = 2
+visibility_layer = 4
+z_index = 1
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -93,6 +97,7 @@ grow_vertical = 0
 mouse_filter = 1
 
 [node name="Dialogue" type="MarginContainer" parent="Balloon/Panel"]
+z_index = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -101,11 +106,13 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/Panel/Dialogue"]
+z_index = 1
 layout_mode = 2
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon/Panel/Dialogue/VBoxContainer"]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
+z_index = 1
 layout_mode = 2
 mouse_filter = 1
 bbcode_enabled = true
@@ -115,11 +122,13 @@ scroll_active = false
 
 [node name="DialogueLabel" parent="Balloon/Panel/Dialogue/VBoxContainer" instance=ExtResource("2_a8ve6")]
 unique_name_in_owner = true
+z_index = 1
 layout_mode = 2
 size_flags_vertical = 3
 text = "Dialogue..."
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]
+z_index = 1
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -135,6 +144,7 @@ grow_vertical = 0
 
 [node name="ResponsesMenu" type="VBoxContainer" parent="Balloon/Responses" node_paths=PackedStringArray("response_template")]
 unique_name_in_owner = true
+z_index = 1
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_constants/separation = 2
@@ -142,6 +152,7 @@ script = ExtResource("3_72ixx")
 response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/Responses/ResponsesMenu"]
+z_index = 1
 layout_mode = 2
 text = "Response example"
 

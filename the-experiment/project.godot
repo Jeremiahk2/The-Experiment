@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 SceneTransition="*res://Scenes/scene_transition.tscn"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+state="*res://Scripts/state.gd"
 
 [editor_plugins]
 
