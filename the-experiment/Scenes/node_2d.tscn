@@ -13,7 +13,9 @@ scale = Vector2(0.6, 0.589335)
 texture = ExtResource("1_emxc6")
 script = ExtResource("2_20q8s")
 
-[node name="Nprofile2" type="Sprite2D" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Nprofile2" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(1034.5, 463.75)
 scale = Vector2(0.243333, 0.245)
 texture = ExtResource("3_uoln3")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg2jqwfb5146y"]
+
+[ext_resource type="Texture2D" uid="uid://ddj01p06u32m1" path="res://Assets/thelab.jpg" id="1_cbyfl"]
+[ext_resource type="Script" path="res://Scripts/scene_1.gd" id="1_d6747"]
+[ext_resource type="Texture2D" uid="uid://brmm64ogvdm7t" path="res://Assets/Sasuke.jpeg" id="2_oflqw"]
+[ext_resource type="Texture2D" uid="uid://dvgwoauls6bc8" path="res://Assets/Nprofile2.jpg" id="3_0crsl"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_d6747")
+sasuke = ExtResource("2_oflqw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(578.5, 321.5)
+scale = Vector2(1.12598, 0.62207)
+texture = ExtResource("1_cbyfl")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Nprofile2" type="Sprite2D" parent="CanvasLayer"]
+visibility_layer = 4
+z_index = 2
+position = Vector2(1050, 464)
+scale = Vector2(0.68, 0.704)
+texture = ExtResource("3_0crsl")
