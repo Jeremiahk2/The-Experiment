@@ -11,6 +11,10 @@ config_version=5
 [application]
 
 config/name="The Experiment"
-run/main_scene="res://Scenes/node_2d.tscn"
+run/main_scene="res://Scenes/scene_transition.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SceneTransition="*res://Scenes/scene_transition.tscn"
