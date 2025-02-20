@@ -1,0 +1,11 @@
+~ start
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Hi Seline right? I've been looking for you. Names Eryndor.
+
+do state.speaker_changed.emit("Seline")
+Seline: Hi Yes I'm Seline, why were you looking for me?
+
+do state.speaker_changed.emit("Eryndor")
+Eryndor: I've heard you have a lot of experience with magical artifacts. Recently I've been assigned to a special experiment from the Headmaster himself and would like for you to be my assistant.
+do state.speaker_changed.emit("done")
+=> END
