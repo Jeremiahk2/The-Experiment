@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cb7e3chimr0tw"]
+[gd_scene load_steps=6 format=3 uid="uid://bsh3d6lqmhf7s"]
 
 [ext_resource type="Script" path="res://Scripts/intro_scene.gd" id="1_it71x"]
 [ext_resource type="Texture2D" uid="uid://cyl66vitqi2ym" path="res://Assets/courtyard.jpg" id="2_phxna"]
+[ext_resource type="Script" path="res://Scripts/Characters/characters.gd" id="3_3uw48"]
 [ext_resource type="Texture2D" uid="uid://dtkpuf3n32p37" path="res://Assets/seline_main_transparent.png" id="3_b0pki"]
 [ext_resource type="Texture2D" uid="uid://dyv1mlbw2myvs" path="res://Assets/eryndor_demo_transparent.png" id="4_7qk5q"]
 
@@ -13,10 +14,14 @@ position = Vector2(958, 541.5)
 scale = Vector2(1.86719, 1.05566)
 texture = ExtResource("2_phxna")
 
-[node name="SelineMainTransparent" type="Sprite2D" parent="."]
+[node name="Sprites" type="CanvasLayer" parent="."]
+layer = 0
+script = ExtResource("3_3uw48")
+
+[node name="SelineMainTransparent" type="Sprite2D" parent="Sprites"]
 position = Vector2(209, 1208)
 texture = ExtResource("3_b0pki")
 
-[node name="EryndorDemoTransparent" type="Sprite2D" parent="."]
+[node name="EryndorDemoTransparent" type="Sprite2D" parent="Sprites"]
 position = Vector2(226, 875)
 texture = ExtResource("4_7qk5q")
