@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://08s43vyiklms"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/dungeon.gd" id="1_5c61v"]
+[ext_resource type="Texture2D" uid="uid://duxf2hmwgsup0" path="res://Assets/Library/library_1.jpg" id="2_7vlmv"]
+[ext_resource type="PackedScene" uid="uid://d2mjalvkw6cxo" path="res://Scenes/Utilities/Inventory.tscn" id="3_go04s"]
+[ext_resource type="PackedScene" uid="uid://bmyv0q2xvvogv" path="res://Scenes/Utilities/characters.tscn" id="4_ydlkw"]
+
+[node name="Dungeon" type="Node2D"]
+script = ExtResource("1_5c61v")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 542)
+scale = Vector2(0.9375, 1.0498)
+texture = ExtResource("2_7vlmv")
+metadata/_edit_lock_ = true
+
+[node name="Inventory" parent="." instance=ExtResource("3_go04s")]
+offset_left = -2.0
+offset_top = 4.0
+offset_right = -2.0
+offset_bottom = 4.0
+metadata/_edit_lock_ = true
+
+[node name="Characters" parent="." instance=ExtResource("4_ydlkw")]
+metadata/_edit_lock_ = true

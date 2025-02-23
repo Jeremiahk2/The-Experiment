@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://wnixpw43kt3"
+path="res://.godot/imported/Alchemy.dialogue-b1eabdf9f2eb40f3680637d4b4cddba4.tres"
+
+[deps]
+
+source_file="res://Dialogue/Level_Dialogue/Alchemy.dialogue"
+dest_files=["res://.godot/imported/Alchemy.dialogue-b1eabdf9f2eb40f3680637d4b4cddba4.tres"]
+
+[params]
+
+defaults=true

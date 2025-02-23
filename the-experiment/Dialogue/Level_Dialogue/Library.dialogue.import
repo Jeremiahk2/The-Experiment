@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://doayuiimn4agm"
+path="res://.godot/imported/Library.dialogue-b246395805e226080dc8ec6ec9ead080.tres"
+
+[deps]
+
+source_file="res://Dialogue/Level_Dialogue/Library.dialogue"
+dest_files=["res://.godot/imported/Library.dialogue-b246395805e226080dc8ec6ec9ead080.tres"]
+
+[params]
+
+defaults=true

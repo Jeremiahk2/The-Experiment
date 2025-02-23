@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://q1ple7uxqs0p"
+path="res://.godot/imported/Armory.dialogue-b9c09a66a00cd471dedeb7831dace18a.tres"
+
+[deps]
+
+source_file="res://Dialogue/Level_Dialogue/Armory.dialogue"
+dest_files=["res://.godot/imported/Armory.dialogue-b9c09a66a00cd471dedeb7831dace18a.tres"]
+
+[params]
+
+defaults=true

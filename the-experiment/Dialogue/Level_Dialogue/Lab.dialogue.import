@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://desskvdddtu6u"
+path="res://.godot/imported/Lab.dialogue-030e6307d6f97915150350d5eb1cc945.tres"
+
+[deps]
+
+source_file="res://Dialogue/Level_Dialogue/Lab.dialogue"
+dest_files=["res://.godot/imported/Lab.dialogue-030e6307d6f97915150350d5eb1cc945.tres"]
+
+[params]
+
+defaults=true

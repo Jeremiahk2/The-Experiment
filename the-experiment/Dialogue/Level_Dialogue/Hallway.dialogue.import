@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://bqs7w76t2lgfh"
+path="res://.godot/imported/Hallway.dialogue-2478707b56b3bdb166f393b37d83220a.tres"
+
+[deps]
+
+source_file="res://Dialogue/Level_Dialogue/Hallway.dialogue"
+dest_files=["res://.godot/imported/Hallway.dialogue-2478707b56b3bdb166f393b37d83220a.tres"]
+
+[params]
+
+defaults=true

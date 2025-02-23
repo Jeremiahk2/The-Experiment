@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0gcir38iymxx"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/alchemy.gd" id="1_7xi0w"]
+[ext_resource type="Texture2D" uid="uid://duxf2hmwgsup0" path="res://Assets/Library/library_1.jpg" id="2_fwbua"]
+[ext_resource type="PackedScene" uid="uid://d2mjalvkw6cxo" path="res://Scenes/Utilities/Inventory.tscn" id="3_wtbx1"]
+[ext_resource type="PackedScene" uid="uid://bmyv0q2xvvogv" path="res://Scenes/Utilities/characters.tscn" id="4_rl8a0"]
+
+[node name="Alchemy" type="Node2D"]
+script = ExtResource("1_7xi0w")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 542)
+scale = Vector2(0.9375, 1.0498)
+texture = ExtResource("2_fwbua")
+metadata/_edit_lock_ = true
+
+[node name="Inventory" parent="." instance=ExtResource("3_wtbx1")]
+offset_left = -2.0
+offset_top = 4.0
+offset_right = -2.0
+offset_bottom = 4.0
+metadata/_edit_lock_ = true
+
+[node name="Characters" parent="." instance=ExtResource("4_rl8a0")]
+metadata/_edit_lock_ = true

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bfvipwputc1p6"]
 
-[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_3c2yc"]
+[ext_resource type="Script" path="res://Scripts/Menus/main_menu.gd" id="1_3c2yc"]
 [ext_resource type="Texture2D" uid="uid://q0tmantxt4fx" path="res://Assets/MenuImage.png" id="2_2ryhs"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bfptl"]
