@@ -70,7 +70,7 @@ script = ExtResource("1_36de5")
 [node name="Balloon" type="Control" parent="."]
 unique_name_in_owner = true
 visibility_layer = 8
-z_index = 1
+z_index = 2
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
