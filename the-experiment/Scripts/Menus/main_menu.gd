@@ -2,7 +2,7 @@ extends Control
 
 @onready var start_button = $Start
 @onready var quit_button = $Quit
-var startingScene = preload("res://Scenes/intro_scene.tscn")
+var startingScene = preload("res://Scenes/Levels/intro_scene.tscn")
 
 func _ready():
 	start_button.pressed.connect(_on_start_pressed)

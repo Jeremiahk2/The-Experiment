@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bmyv0q2xvvogv"]
 
-[ext_resource type="Script" path="res://Scripts/Characters/characters.gd" id="1_skk50"]
+[ext_resource type="Script" path="res://Scripts/Utilities/characters.gd" id="1_skk50"]
 [ext_resource type="Texture2D" uid="uid://dtkpuf3n32p37" path="res://Assets/seline_main_transparent.png" id="2_os7mb"]
 [ext_resource type="Texture2D" uid="uid://dyv1mlbw2myvs" path="res://Assets/eryndor_demo_transparent.png" id="3_oxfpv"]
 

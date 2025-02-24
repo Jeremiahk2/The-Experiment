@@ -1,0 +1,66 @@
+[gd_scene load_steps=11 format=3 uid="uid://c7uywcmvrxgyl"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/library.gd" id="1_3rxnh"]
+[ext_resource type="Texture2D" uid="uid://duxf2hmwgsup0" path="res://Assets/Library/library_1.jpg" id="2_cjohp"]
+[ext_resource type="PackedScene" uid="uid://d2mjalvkw6cxo" path="res://Scenes/Utilities/Inventory.tscn" id="3_pm4uc"]
+[ext_resource type="PackedScene" uid="uid://bmyv0q2xvvogv" path="res://Scenes/Utilities/characters.tscn" id="4_7ur2p"]
+[ext_resource type="Texture2D" uid="uid://c4u8ulh4ww8l8" path="res://Assets/Library/absorption_scepter.png" id="4_ulova"]
+[ext_resource type="Script" path="res://Scripts/Utilities/object.gd" id="5_x7dw6"]
+[ext_resource type="Texture2D" uid="uid://pwc73oj52ng2" path="res://Assets/Library/old_one_scroll.png" id="6_drhif"]
+[ext_resource type="Texture2D" uid="uid://cycktge0uqy63" path="res://Assets/Library/tome_conduits.png" id="7_8hi8k"]
+[ext_resource type="Texture2D" uid="uid://86yyupk0oynk" path="res://Assets/Library/desolation_orb.png" id="8_0fdxj"]
+[ext_resource type="Texture2D" uid="uid://g3jv7173gisj" path="res://Assets/Library/dragon_sigil.png" id="9_1oj6t"]
+
+[node name="Library" type="Node2D"]
+script = ExtResource("1_3rxnh")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 542)
+scale = Vector2(0.9375, 1.0498)
+texture = ExtResource("2_cjohp")
+metadata/_edit_lock_ = true
+
+[node name="Inventory" parent="." instance=ExtResource("3_pm4uc")]
+offset_left = -2.0
+offset_top = 4.0
+offset_right = -2.0
+offset_bottom = 4.0
+metadata/_edit_lock_ = true
+
+[node name="Characters" parent="." instance=ExtResource("4_7ur2p")]
+
+[node name="AbsorptionScepter" type="Sprite2D" parent="."]
+position = Vector2(1581, 437)
+scale = Vector2(0.564453, 0.466797)
+texture = ExtResource("4_ulova")
+script = ExtResource("5_x7dw6")
+metadata/_edit_lock_ = true
+
+[node name="OldOneScroll" type="Sprite2D" parent="."]
+position = Vector2(1703, 738)
+scale = Vector2(0.296875, 0.292969)
+texture = ExtResource("6_drhif")
+script = ExtResource("5_x7dw6")
+metadata/_edit_lock_ = true
+
+[node name="TomeConduits" type="Sprite2D" parent="."]
+position = Vector2(1560, 879)
+rotation = 0.523599
+scale = Vector2(0.275221, 0.301937)
+texture = ExtResource("7_8hi8k")
+script = ExtResource("5_x7dw6")
+metadata/_edit_lock_ = true
+
+[node name="DesolationOrb" type="Sprite2D" parent="."]
+position = Vector2(1348, 743)
+scale = Vector2(0.194824, 0.206543)
+texture = ExtResource("8_0fdxj")
+script = ExtResource("5_x7dw6")
+metadata/_edit_lock_ = true
+
+[node name="DragonSigil" type="Sprite2D" parent="."]
+position = Vector2(947, 707)
+scale = Vector2(0.160156, 0.12207)
+texture = ExtResource("9_1oj6t")
+script = ExtResource("5_x7dw6")
+metadata/_edit_lock_ = true
