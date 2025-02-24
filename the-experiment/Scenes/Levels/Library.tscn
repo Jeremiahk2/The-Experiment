@@ -1,23 +1,26 @@
-[gd_scene load_steps=11 format=3 uid="uid://c7uywcmvrxgyl"]
+[gd_scene load_steps=14 format=3 uid="uid://c7uywcmvrxgyl"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/library.gd" id="1_3rxnh"]
-[ext_resource type="Texture2D" uid="uid://duxf2hmwgsup0" path="res://Assets/Library/library_1.jpg" id="2_cjohp"]
+[ext_resource type="Texture2D" uid="uid://diojbjt6vwvbq" path="res://Assets/Library/library_room3.png" id="2_jlol8"]
 [ext_resource type="PackedScene" uid="uid://d2mjalvkw6cxo" path="res://Scenes/Utilities/Inventory.tscn" id="3_pm4uc"]
 [ext_resource type="PackedScene" uid="uid://bmyv0q2xvvogv" path="res://Scenes/Utilities/characters.tscn" id="4_7ur2p"]
-[ext_resource type="Texture2D" uid="uid://c4u8ulh4ww8l8" path="res://Assets/Library/absorption_scepter.png" id="4_ulova"]
+[ext_resource type="Texture2D" uid="uid://bdbbt5jk0nm34" path="res://Assets/Library/required items/demon_stone1.png" id="5_wdyox"]
 [ext_resource type="Script" path="res://Scripts/Utilities/object.gd" id="5_x7dw6"]
-[ext_resource type="Texture2D" uid="uid://pwc73oj52ng2" path="res://Assets/Library/old_one_scroll.png" id="6_drhif"]
-[ext_resource type="Texture2D" uid="uid://cycktge0uqy63" path="res://Assets/Library/tome_conduits.png" id="7_8hi8k"]
-[ext_resource type="Texture2D" uid="uid://86yyupk0oynk" path="res://Assets/Library/desolation_orb.png" id="8_0fdxj"]
-[ext_resource type="Texture2D" uid="uid://g3jv7173gisj" path="res://Assets/Library/dragon_sigil.png" id="9_1oj6t"]
+[ext_resource type="Texture2D" uid="uid://b7cc03es6egap" path="res://Assets/Library/required items/griffin_feather.png" id="6_ydf3c"]
+[ext_resource type="Texture2D" uid="uid://ixuub1118qj6" path="res://Assets/Library/required items/book_of_conduits.png" id="7_ykmw8"]
+[ext_resource type="Texture2D" uid="uid://dxpatkafc7xju" path="res://Assets/Library/optional items/wizard_staff1.png" id="9_s163l"]
+[ext_resource type="Texture2D" uid="uid://eveyjatnvfru" path="res://Assets/Library/optional items/wizard_staff2.png" id="10_mbw5u"]
+[ext_resource type="Texture2D" uid="uid://cbc0vqeka82xb" path="res://Assets/Library/optional items/table_weight_skull.png" id="11_30iyo"]
+[ext_resource type="Texture2D" uid="uid://dsq64axn2so6k" path="res://Assets/Library/optional items/peculiar_gem.png" id="12_4m8xe"]
+[ext_resource type="Texture2D" uid="uid://dkk7c013vw0fb" path="res://Assets/Library/optional items/blue_potion.png" id="13_xmsxh"]
 
 [node name="Library" type="Node2D"]
 script = ExtResource("1_3rxnh")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(960, 542)
-scale = Vector2(0.9375, 1.0498)
-texture = ExtResource("2_cjohp")
+position = Vector2(959, 540.767)
+scale = Vector2(0.93457, 0.799454)
+texture = ExtResource("2_jlol8")
 metadata/_edit_lock_ = true
 
 [node name="Inventory" parent="." instance=ExtResource("3_pm4uc")]
@@ -29,38 +32,56 @@ metadata/_edit_lock_ = true
 
 [node name="Characters" parent="." instance=ExtResource("4_7ur2p")]
 
-[node name="AbsorptionScepter" type="Sprite2D" parent="."]
-position = Vector2(1581, 437)
-scale = Vector2(0.564453, 0.466797)
-texture = ExtResource("4_ulova")
+[node name="DemonStone1" type="Sprite2D" parent="."]
+position = Vector2(1389, 677)
+scale = Vector2(0.128348, 0.137277)
+texture = ExtResource("5_wdyox")
 script = ExtResource("5_x7dw6")
 metadata/_edit_lock_ = true
 
-[node name="OldOneScroll" type="Sprite2D" parent="."]
-position = Vector2(1703, 738)
-scale = Vector2(0.296875, 0.292969)
-texture = ExtResource("6_drhif")
+[node name="GriffinFeather" type="Sprite2D" parent="."]
+position = Vector2(959, 285)
+scale = Vector2(0.194196, 0.185268)
+texture = ExtResource("6_ydf3c")
 script = ExtResource("5_x7dw6")
 metadata/_edit_lock_ = true
 
-[node name="TomeConduits" type="Sprite2D" parent="."]
-position = Vector2(1560, 879)
-rotation = 0.523599
-scale = Vector2(0.275221, 0.301937)
-texture = ExtResource("7_8hi8k")
+[node name="BookOfConduits" type="Sprite2D" parent="."]
+position = Vector2(474, 611)
+rotation = 0.0872665
+scale = Vector2(0.138393, 0.102679)
+texture = ExtResource("7_ykmw8")
 script = ExtResource("5_x7dw6")
 metadata/_edit_lock_ = true
 
-[node name="DesolationOrb" type="Sprite2D" parent="."]
-position = Vector2(1348, 743)
-scale = Vector2(0.194824, 0.206543)
-texture = ExtResource("8_0fdxj")
-script = ExtResource("5_x7dw6")
+[node name="WizardStaff1" type="Sprite2D" parent="."]
+position = Vector2(1228, 711)
+rotation = -0.785397
+scale = Vector2(0.216485, 0.292054)
+texture = ExtResource("9_s163l")
 metadata/_edit_lock_ = true
 
-[node name="DragonSigil" type="Sprite2D" parent="."]
-position = Vector2(947, 707)
-scale = Vector2(0.160156, 0.12207)
-texture = ExtResource("9_1oj6t")
-script = ExtResource("5_x7dw6")
+[node name="WizardStaff2" type="Sprite2D" parent="."]
+position = Vector2(723, 696)
+scale = Vector2(0.415179, 0.339286)
+texture = ExtResource("10_mbw5u")
+metadata/_edit_lock_ = true
+
+[node name="TableWeightSkull" type="Sprite2D" parent="."]
+position = Vector2(986, 719)
+rotation = -0.261799
+scale = Vector2(0.301482, 0.304431)
+texture = ExtResource("11_30iyo")
+metadata/_edit_lock_ = true
+
+[node name="PeculiarGem" type="Sprite2D" parent="."]
+position = Vector2(1086, 609)
+scale = Vector2(0.399635, 0.366788)
+texture = ExtResource("12_4m8xe")
+metadata/_edit_lock_ = true
+
+[node name="BluePotion" type="Sprite2D" parent="."]
+position = Vector2(1811, 971)
+scale = Vector2(0.270089, 0.180804)
+texture = ExtResource("13_xmsxh")
 metadata/_edit_lock_ = true
