@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://c44614k2hvtcn"]
+[gd_scene load_steps=15 format=3 uid="uid://c44614k2hvtcn"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/treasury.gd" id="1_vyri0"]
 [ext_resource type="Texture2D" uid="uid://daqysl62kq2gc" path="res://Assets/Treasury/treasury_room2.png" id="2_mrhim"]
@@ -11,8 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://bcig4gx88cty5" path="res://Assets/Treasury/optional items/golden_chalice2.png" id="9_y6u6b"]
 [ext_resource type="Texture2D" uid="uid://cieh7ifjs1nex" path="res://Assets/Treasury/optional items/gold_bar1.png" id="10_56rqj"]
 [ext_resource type="Texture2D" uid="uid://br8scvvct0h7g" path="res://Assets/Treasury/optional items/jeweled_chalice1.png" id="11_cfm8g"]
-[ext_resource type="Texture2D" uid="uid://c25nn3jhkm28u" path="res://Assets/Treasury/optional items/silver_crown2.png" id="12_7krem"]
-[ext_resource type="Texture2D" uid="uid://du7hn8g27hyfk" path="res://Assets/Treasury/optional items/sliver_crown1.png" id="13_q4lr5"]
 [ext_resource type="Texture2D" uid="uid://bnwy0bjdt5e5" path="res://Assets/Treasury/optional items/blue_necklace.png" id="14_75c7g"]
 [ext_resource type="Texture2D" uid="uid://cls5xw78p0ejd" path="res://Assets/Treasury/optional items/saphire_pedestal.png" id="15_o0ymo"]
 [ext_resource type="Texture2D" uid="uid://bdkoh06dlim5n" path="res://Assets/Treasury/optional items/emerald_badge.png" id="16_jqxm2"]
@@ -46,11 +44,10 @@ metadata/_edit_lock_ = true
 
 [node name="GoldenApple" type="Sprite2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(491, 509)
+position = Vector2(496, 510)
 scale = Vector2(0.137277, 0.133929)
 texture = ExtResource("7_s660o")
 script = ExtResource("6_u1f6r")
-metadata/_edit_lock_ = true
 
 [node name="TheHeartStone" type="Sprite2D" parent="."]
 unique_name_in_owner = true
@@ -79,19 +76,8 @@ scale = Vector2(0.389509, 0.310268)
 texture = ExtResource("11_cfm8g")
 metadata/_edit_lock_ = true
 
-[node name="SilverCrown2" type="Sprite2D" parent="."]
-position = Vector2(-1078, 1496)
-texture = ExtResource("12_7krem")
-metadata/_edit_lock_ = true
-
-[node name="SliverCrown1" type="Sprite2D" parent="."]
-position = Vector2(1786, 555)
-scale = Vector2(0.177456, 0.210937)
-texture = ExtResource("13_q4lr5")
-metadata/_edit_lock_ = true
-
 [node name="BlueNecklace" type="Sprite2D" parent="."]
-position = Vector2(1780, 687)
+position = Vector2(1776, 693)
 scale = Vector2(0.217634, 0.359092)
 texture = ExtResource("14_75c7g")
 metadata/_edit_lock_ = true
