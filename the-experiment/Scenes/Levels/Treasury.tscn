@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bcig4gx88cty5" path="res://Assets/Treasury/optional items/golden_chalice2.png" id="9_y6u6b"]
 [ext_resource type="Texture2D" uid="uid://cieh7ifjs1nex" path="res://Assets/Treasury/optional items/gold_bar1.png" id="10_56rqj"]
 [ext_resource type="Texture2D" uid="uid://br8scvvct0h7g" path="res://Assets/Treasury/optional items/jeweled_chalice1.png" id="11_cfm8g"]
-[ext_resource type="Texture2D" uid="uid://bnwy0bjdt5e5" path="res://Assets/Treasury/optional items/blue_necklace.png" id="14_75c7g"]
+[ext_resource type="Texture2D" uid="uid://dn1locxgdkchn" path="res://Assets/Treasury/optional items/key_of_hearts.png" id="14_knchb"]
 [ext_resource type="Texture2D" uid="uid://cls5xw78p0ejd" path="res://Assets/Treasury/optional items/saphire_pedestal.png" id="15_o0ymo"]
 [ext_resource type="Texture2D" uid="uid://bdkoh06dlim5n" path="res://Assets/Treasury/optional items/emerald_badge.png" id="16_jqxm2"]
 
@@ -76,14 +76,8 @@ scale = Vector2(0.389509, 0.310268)
 texture = ExtResource("11_cfm8g")
 metadata/_edit_lock_ = true
 
-[node name="BlueNecklace" type="Sprite2D" parent="."]
-position = Vector2(1776, 693)
-scale = Vector2(0.217634, 0.359092)
-texture = ExtResource("14_75c7g")
-metadata/_edit_lock_ = true
-
 [node name="SaphirePedestal" type="Sprite2D" parent="."]
-position = Vector2(1769, 873)
+position = Vector2(888, 854)
 scale = Vector2(0.225168, 0.258371)
 texture = ExtResource("15_o0ymo")
 metadata/_edit_lock_ = true
@@ -93,3 +87,9 @@ position = Vector2(1459, 721)
 scale = Vector2(0.229911, 0.241071)
 texture = ExtResource("16_jqxm2")
 metadata/_edit_lock_ = true
+
+[node name="KeyOfHearts" type="Sprite2D" parent="."]
+position = Vector2(808, 884)
+rotation = 0.523599
+scale = Vector2(0.130734, 0.157478)
+texture = ExtResource("14_knchb")
