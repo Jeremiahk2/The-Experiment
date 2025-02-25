@@ -1,17 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://d0gcir38iymxx"]
+[gd_scene load_steps=12 format=3 uid="uid://d0gcir38iymxx"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/alchemy.gd" id="1_7xi0w"]
-[ext_resource type="Texture2D" uid="uid://duxf2hmwgsup0" path="res://Assets/Library/library_1.jpg" id="2_fwbua"]
 [ext_resource type="PackedScene" uid="uid://d2mjalvkw6cxo" path="res://Scenes/Utilities/Inventory.tscn" id="3_wtbx1"]
+[ext_resource type="Texture2D" uid="uid://862u0yqpmj7h" path="res://Assets/AlchemyClass/alchemy_class_scene.png" id="4_atjwx"]
 [ext_resource type="PackedScene" uid="uid://bmyv0q2xvvogv" path="res://Scenes/Utilities/characters.tscn" id="4_rl8a0"]
+[ext_resource type="Texture2D" uid="uid://du35t3pv8hogw" path="res://Assets/AlchemyClass/required items/basilisk_venom.png" id="5_1dkyb"]
+[ext_resource type="Script" path="res://Scripts/Utilities/object.gd" id="6_3wob0"]
+[ext_resource type="Texture2D" uid="uid://bf0j2tnxixw04" path="res://Assets/AlchemyClass/required items/vitality_potion.png" id="7_5lbnj"]
+[ext_resource type="Texture2D" uid="uid://dwhbc0uns8t5e" path="res://Assets/AlchemyClass/optional items/purple_potion.png" id="8_07ieh"]
+[ext_resource type="Texture2D" uid="uid://do5ke7fi5fs7v" path="res://Assets/AlchemyClass/optional items/green_potion2.png" id="9_wvfnk"]
+[ext_resource type="Texture2D" uid="uid://1typvlevpvea" path="res://Assets/AlchemyClass/optional items/dual_red_potion.png" id="10_vln3l"]
+[ext_resource type="Texture2D" uid="uid://0uqdkl7cnk1m" path="res://Assets/AlchemyClass/optional items/triple_red_potion.png" id="11_k0kjk"]
 
 [node name="Alchemy" type="Node2D"]
 script = ExtResource("1_7xi0w")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(960, 542)
-scale = Vector2(0.9375, 1.0498)
-texture = ExtResource("2_fwbua")
+position = Vector2(959, 540)
+scale = Vector2(0.936523, 0.803571)
+texture = ExtResource("4_atjwx")
 metadata/_edit_lock_ = true
 
 [node name="Inventory" parent="." instance=ExtResource("3_wtbx1")]
@@ -23,3 +30,35 @@ metadata/_edit_lock_ = true
 
 [node name="Characters" parent="." instance=ExtResource("4_rl8a0")]
 metadata/_edit_lock_ = true
+
+[node name="BasiliskVenom" type="Sprite2D" parent="."]
+position = Vector2(1584, 677)
+scale = Vector2(0.28125, 0.294643)
+texture = ExtResource("5_1dkyb")
+script = ExtResource("6_3wob0")
+
+[node name="VitalityPotion" type="Sprite2D" parent="."]
+position = Vector2(1739, 932)
+scale = Vector2(0.297921, 0.328997)
+texture = ExtResource("7_5lbnj")
+script = ExtResource("6_3wob0")
+
+[node name="PurplePotion" type="Sprite2D" parent="."]
+position = Vector2(847, 878)
+scale = Vector2(0.531808, 0.546875)
+texture = ExtResource("8_07ieh")
+
+[node name="GreenPotion2" type="Sprite2D" parent="."]
+position = Vector2(1847, 547)
+scale = Vector2(0.239397, 0.207868)
+texture = ExtResource("9_wvfnk")
+
+[node name="DualRedPotion" type="Sprite2D" parent="."]
+position = Vector2(1136, 827)
+scale = Vector2(0.479911, 0.455357)
+texture = ExtResource("10_vln3l")
+
+[node name="TripleRedPotion" type="Sprite2D" parent="."]
+position = Vector2(554, 842)
+scale = Vector2(0.277902, 0.305803)
+texture = ExtResource("11_k0kjk")

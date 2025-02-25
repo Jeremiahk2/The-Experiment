@@ -1,18 +1,34 @@
-[gd_scene load_steps=5 format=3 uid="uid://do2a1lnwgarev"]
+[gd_scene load_steps=27 format=3 uid="uid://do2a1lnwgarev"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/garden.gd" id="1_lmd46"]
-[ext_resource type="Texture2D" uid="uid://duxf2hmwgsup0" path="res://Assets/Library/library_1.jpg" id="2_lgqii"]
 [ext_resource type="PackedScene" uid="uid://d2mjalvkw6cxo" path="res://Scenes/Utilities/Inventory.tscn" id="3_xilyd"]
 [ext_resource type="PackedScene" uid="uid://bmyv0q2xvvogv" path="res://Scenes/Utilities/characters.tscn" id="4_lthad"]
+[ext_resource type="Texture2D" uid="uid://dnui1ljrxwhp0" path="res://Assets/Garden/garden_scene.png" id="4_yfouc"]
+[ext_resource type="Texture2D" uid="uid://boyhr6xjqpk2m" path="res://Assets/Garden/optional items/blue_flower1.png" id="5_8iiwf"]
+[ext_resource type="Texture2D" uid="uid://ck21s08cnkifv" path="res://Assets/Garden/optional items/blue_flower2.png" id="6_efgog"]
+[ext_resource type="Texture2D" uid="uid://clwyddiru1cam" path="res://Assets/Garden/optional items/blue_flower3.png" id="7_0ie48"]
+[ext_resource type="Texture2D" uid="uid://cnfh11kt8x2t5" path="res://Assets/Garden/optional items/blue_flower4.png" id="8_bucsi"]
+[ext_resource type="Texture2D" uid="uid://7opg0prvg3i2" path="res://Assets/Garden/optional items/flower_pot2.png" id="9_lwais"]
+[ext_resource type="Texture2D" uid="uid://dwap5tb3oo20x" path="res://Assets/Garden/optional items/flower_pot1.png" id="10_q4pg2"]
+[ext_resource type="Texture2D" uid="uid://itcbbiyp0o4w" path="res://Assets/Garden/optional items/gem_fruit_seed.png" id="11_tm7gg"]
+[ext_resource type="Texture2D" uid="uid://5xsjqfhlyiyg" path="res://Assets/Garden/optional items/golden_flower1.png" id="12_s6ikd"]
+[ext_resource type="Texture2D" uid="uid://c66a2sbfjtmpw" path="res://Assets/Garden/optional items/golden_flower2.png" id="13_3wpuq"]
+[ext_resource type="Texture2D" uid="uid://ddmu6flyuy1ka" path="res://Assets/Garden/required items/royal_flower.png" id="14_bn3ey"]
+[ext_resource type="Texture2D" uid="uid://cg11mt2t41nik" path="res://Assets/Garden/optional items/red_flower1.png" id="15_ysyeb"]
+[ext_resource type="Texture2D" uid="uid://xx48kcbu4pys" path="res://Assets/Garden/optional items/unripe_shadowfruit.png" id="16_d87cl"]
+[ext_resource type="Texture2D" uid="uid://devqymp2nqxhp" path="res://Assets/Garden/optional items/yellow_flower2.png" id="17_llkuy"]
+[ext_resource type="Texture2D" uid="uid://besme1kqqedtn" path="res://Assets/Garden/optional items/yellow_flower.png" id="18_clclh"]
+[ext_resource type="Texture2D" uid="uid://cc3x2cgxjyqn7" path="res://Assets/Garden/required items/blood_flower.png" id="19_iujue"]
+[ext_resource type="Script" path="res://Scripts/Utilities/object.gd" id="20_72vkm"]
+[ext_resource type="Texture2D" uid="uid://xrnvio3evdl5" path="res://Assets/Garden/required items/moon_crest_flower.png" id="20_323h0"]
+[ext_resource type="Texture2D" uid="uid://crdmtsk3pagj1" path="res://Assets/Garden/optional items/flame_bug.png" id="22_5yege"]
+[ext_resource type="Texture2D" uid="uid://bfodmehxkxly5" path="res://Assets/Garden/optional items/magic_beetle.png" id="23_qkvd0"]
+[ext_resource type="Texture2D" uid="uid://dg0ycboll52c" path="res://Assets/Garden/optional items/strange_bug.png" id="24_wdufw"]
+[ext_resource type="Texture2D" uid="uid://naugnnwp10pe" path="res://Assets/Garden/optional items/bowl_fruit.png" id="25_e8sjb"]
+[ext_resource type="Texture2D" uid="uid://bkginig1auw0m" path="res://Assets/Garden/optional items/magic_lady_bug.png" id="26_rywcj"]
 
 [node name="Garden" type="Node2D"]
 script = ExtResource("1_lmd46")
-
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(960, 542)
-scale = Vector2(0.9375, 1.0498)
-texture = ExtResource("2_lgqii")
-metadata/_edit_lock_ = true
 
 [node name="Inventory" parent="." instance=ExtResource("3_xilyd")]
 offset_left = -2.0
@@ -23,3 +39,136 @@ metadata/_edit_lock_ = true
 
 [node name="Characters" parent="." instance=ExtResource("4_lthad")]
 metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(0.9375, 0.803571)
+texture = ExtResource("4_yfouc")
+metadata/_edit_lock_ = true
+
+[node name="BlueFlower1" type="Sprite2D" parent="."]
+position = Vector2(1621, 713)
+scale = Vector2(0.222656, 0.220424)
+texture = ExtResource("5_8iiwf")
+metadata/_edit_lock_ = true
+
+[node name="BlueFlower2" type="Sprite2D" parent="."]
+position = Vector2(1032, 676)
+rotation = 1.7558
+scale = Vector2(0.151228, 0.195313)
+texture = ExtResource("6_efgog")
+metadata/_edit_lock_ = true
+
+[node name="BlueFlower3" type="Sprite2D" parent="."]
+z_index = 4
+position = Vector2(949, 562)
+rotation = -0.322886
+scale = Vector2(0.207589, 0.220982)
+texture = ExtResource("7_0ie48")
+metadata/_edit_lock_ = true
+
+[node name="BlueFlower4" type="Sprite2D" parent="."]
+z_index = 3
+position = Vector2(1006, 556)
+scale = Vector2(0.279018, 0.256696)
+texture = ExtResource("8_bucsi")
+metadata/_edit_lock_ = true
+
+[node name="FlowerPot2" type="Sprite2D" parent="."]
+position = Vector2(1607, 788)
+scale = Vector2(0.261719, 0.234375)
+texture = ExtResource("9_lwais")
+
+[node name="FlowerPot1" type="Sprite2D" parent="."]
+position = Vector2(955, 645)
+scale = Vector2(0.339286, 0.319196)
+texture = ExtResource("10_q4pg2")
+metadata/_edit_lock_ = true
+
+[node name="GemFruitSeed" type="Sprite2D" parent="."]
+position = Vector2(1075, 984)
+scale = Vector2(0.203683, 0.202567)
+texture = ExtResource("11_tm7gg")
+metadata/_edit_lock_ = true
+
+[node name="GoldenFlower1" type="Sprite2D" parent="."]
+position = Vector2(1415, 689)
+rotation = 0.858702
+scale = Vector2(0.20701, 0.208709)
+texture = ExtResource("12_s6ikd")
+metadata/_edit_lock_ = true
+
+[node name="GoldenFlower2" type="Sprite2D" parent="."]
+position = Vector2(1364, 678)
+rotation = -1.37881
+scale = Vector2(0.225446, 0.252232)
+texture = ExtResource("13_3wpuq")
+metadata/_edit_lock_ = true
+
+[node name="RoyalFlower" type="Sprite2D" parent="."]
+position = Vector2(1119, 164)
+scale = Vector2(0.0580358, 0.155134)
+texture = ExtResource("14_bn3ey")
+script = ExtResource("20_72vkm")
+
+[node name="RedFlower1" type="Sprite2D" parent="."]
+position = Vector2(1907, 950)
+rotation = -1.16937
+scale = Vector2(0.405817, 0.458514)
+texture = ExtResource("15_ysyeb")
+metadata/_edit_lock_ = true
+
+[node name="UnripeShadowfruit" type="Sprite2D" parent="."]
+position = Vector2(445, 559)
+scale = Vector2(0.172433, 0.158482)
+texture = ExtResource("16_d87cl")
+metadata/_edit_lock_ = true
+
+[node name="YellowFlower2" type="Sprite2D" parent="."]
+position = Vector2(1803, 610)
+scale = Vector2(0.214286, 0.199777)
+texture = ExtResource("17_llkuy")
+
+[node name="YellowFlower" type="Sprite2D" parent="."]
+position = Vector2(1694, 1053)
+rotation = -0.322886
+scale = Vector2(0.602197, 0.597258)
+texture = ExtResource("18_clclh")
+
+[node name="BloodFlower" type="Sprite2D" parent="."]
+position = Vector2(1821, 1024)
+rotation = -0.436332
+scale = Vector2(0.378348, 0.332589)
+texture = ExtResource("19_iujue")
+script = ExtResource("20_72vkm")
+
+[node name="MoonCrestFlower" type="Sprite2D" parent="."]
+position = Vector2(1722.75, 613.25)
+scale = Vector2(0.228795, 0.188616)
+texture = ExtResource("20_323h0")
+script = ExtResource("20_72vkm")
+
+[node name="FlameBug" type="Sprite2D" parent="."]
+position = Vector2(319.25, 89.75)
+scale = Vector2(0.289063, 0.262277)
+texture = ExtResource("22_5yege")
+
+[node name="MagicBeetle" type="Sprite2D" parent="."]
+position = Vector2(1347, 515)
+scale = Vector2(0.0837054, 0.0714285)
+texture = ExtResource("23_qkvd0")
+
+[node name="StrangeBug" type="Sprite2D" parent="."]
+position = Vector2(99, 472)
+scale = Vector2(0.247768, 0.263393)
+texture = ExtResource("24_wdufw")
+
+[node name="BowlFruit" type="Sprite2D" parent="."]
+position = Vector2(555, 745)
+scale = Vector2(0.376395, 0.353795)
+texture = ExtResource("25_e8sjb")
+
+[node name="MagicLadyBug" type="Sprite2D" parent="."]
+position = Vector2(1197, 564)
+scale = Vector2(0.160714, 0.15625)
+texture = ExtResource("26_rywcj")
