@@ -2,6 +2,7 @@
 do state.speaker_changed.emit("Seline")
 Seline: Ahah. This looks like The Book of Conduits that Eryndor was talking about. Better head back to the Lab.
 do state.speaker_changed.emit("done")
+do state.set_tome_flag(true)
 do state.change_current_scene("Laboratory")
 => END
 

@@ -16,6 +16,7 @@ func _process(delta: float) -> void:
 		state.vitality_dialogue_shown = true
 		DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Alchemy.dialogue"), "vitality")
 
-	if state.found_basilisk_venom and state.found_vitality_potion:
+	if !state.alchemy_complete_dialogue_shown and state.found_basilisk_venom and state.found_vitality_potion:
+		state.alchemy_complete_dialogue_shown = true
 		DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Alchemy.dialogue"), "complete")
 	pass

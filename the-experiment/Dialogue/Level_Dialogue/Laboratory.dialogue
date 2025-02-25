@@ -31,7 +31,7 @@ Eyrndor: Looks like you've found the Tome of Conduits!!!
 do state.speaker_changed.emit("Seline")
 Seline: Yeah it was in the library like you said.
 do state.speaker_changed.emit("Eryndor")
-Eryndor: Fantastic. This will tell me all I need to know about the siphoning of magic and how to imbue such powerful into this ancient recreation.
+Eryndor: Fantastic! This will tell me all I need to know about the siphoning of magic and how to imbue such powerful into this ancient recreation.
 Eyrndor: Now I will need two items that should be easily obtainable from the Alchemy classroom. Basilisks Venom and a Potion of Vitality.
 do state.speaker_changed.emit("Seline")
 Seline: Basislisks Venom and a Potion of Vitality. Got it!
@@ -39,7 +39,7 @@ do state.speaker_changed.emit("done")
 do state.change_current_scene("Alchemy")
 => END
 
-moon_dialogue
+~ moon_dialogue
 do state.speaker_changed.emit("Eryndor")
 Eyrndor: Ahhh the beautiful yet elusive Moon Crest Flower. It looks like you what you were looking for after all.
 do state.speaker_changed.emit("Seline")
@@ -51,6 +51,44 @@ do state.speaker_changed.emit("Seline")
 Seline: Basislisks Venom and a Potion of Vitality. Got it!
 do state.speaker_changed.emit("done")
 do state.change_current_scene("Alchemy")
+=> END
+
+~ alchemy_lab_complete
+do state.speaker_changed.emit("Seline")
+Seline: I found the Basilisk Venom and Potion of Vitality in the Alchemy Classroom. 
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Well done, and with that we are halfway complete with our little experiment. Only a few more items to collect and we will have ourselves one of the most powerful artifacts known to mankind.
+do state.speaker_changed.emit("Seline")
+Seline: Alright so what's next on the list?
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Next we can either use a Blood Flower or a Royal Flower. Either should do so whichever is easier for you to find should work.
+do state.speaker_changed.emit("Seline")
+Seline: Those are two completely different ingredients with a vast difference in effect. Does it really not matter which we use?
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Ahh Seline my dear this is why I am the scientist and you the assistant. Let me do the thinking and you the fetching. Now off you go.
+do state.speaker_changed.emit("Seline")
+Seline: Umm...okay I should be able to find what we need in the indoor Garden.
+do state.speaker_changed.emit("done")
+do state.change_current_scene("Garden")
+=> END
+
+~ garden_complete
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Seline, welcome back. I take it you have found one of the flowers I was in need of?
+do state.speaker_changed.emit("Seline")
+Seline: Yes I have found them.
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Excellent. Now I need you to head to the treasury in search of some interesting items.
+do state.speaker_changed.emit("Seline")
+Seline: Treasury. Got it.
+do state.speaker_changed.emit("done")
+do state.change_current_scene("Treasury")
+=> END
+
+~ treasury_complete
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Amazing work Seline. Now with that our little experiment has come to it's conclusion!
+Eryndor: And so have you my dear....BUuuHAahahaHAhahahahaHAhahahaHA!
 => END
 
 ~ level_1_intro
