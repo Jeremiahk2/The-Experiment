@@ -31,6 +31,7 @@ func add_object(texture: Texture):
 	inventory_container.add_child(container)  # Add container to inventory
 	if not is_visible:
 		slide()
+	
 
 func _input(event):
 	if event is InputEventKey and event.pressed and event.keycode == KEY_G:

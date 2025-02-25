@@ -25,6 +25,7 @@ texture = ExtResource("2_mrhim")
 metadata/_edit_lock_ = true
 
 [node name="Inventory" parent="." instance=ExtResource("3_ghijj")]
+z_index = 1
 offset_left = -2.0
 offset_top = 4.0
 offset_right = -2.0

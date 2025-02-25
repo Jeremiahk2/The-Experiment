@@ -2,6 +2,7 @@ extends Node
 
 signal change_texture
 signal speaker_changed(speaker: String)
+signal item_get
 
 var scene_changer = preload("res://Scenes/Utilities/scene_transition.tscn")
 
