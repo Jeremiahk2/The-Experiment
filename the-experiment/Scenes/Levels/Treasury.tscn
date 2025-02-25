@@ -1,0 +1,95 @@
+[gd_scene load_steps=15 format=3 uid="uid://c44614k2hvtcn"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/treasury.gd" id="1_vyri0"]
+[ext_resource type="Texture2D" uid="uid://daqysl62kq2gc" path="res://Assets/Treasury/treasury_room2.png" id="2_mrhim"]
+[ext_resource type="PackedScene" uid="uid://d2mjalvkw6cxo" path="res://Scenes/Utilities/Inventory.tscn" id="3_ghijj"]
+[ext_resource type="PackedScene" uid="uid://bmyv0q2xvvogv" path="res://Scenes/Utilities/characters.tscn" id="4_pc8us"]
+[ext_resource type="Texture2D" uid="uid://b41do55xcj3mt" path="res://Assets/Treasury/required items/emerald_of_catontia.png" id="5_m30hi"]
+[ext_resource type="Script" path="res://Scripts/Utilities/object.gd" id="6_u1f6r"]
+[ext_resource type="Texture2D" uid="uid://bwtp0f5fa34tc" path="res://Assets/Treasury/required items/golden_apple.png" id="7_s660o"]
+[ext_resource type="Texture2D" uid="uid://brojwywt3qdk" path="res://Assets/Treasury/required items/the_heart_stone.png" id="8_7p15p"]
+[ext_resource type="Texture2D" uid="uid://bcig4gx88cty5" path="res://Assets/Treasury/optional items/golden_chalice2.png" id="9_y6u6b"]
+[ext_resource type="Texture2D" uid="uid://cieh7ifjs1nex" path="res://Assets/Treasury/optional items/gold_bar1.png" id="10_56rqj"]
+[ext_resource type="Texture2D" uid="uid://br8scvvct0h7g" path="res://Assets/Treasury/optional items/jeweled_chalice1.png" id="11_cfm8g"]
+[ext_resource type="Texture2D" uid="uid://dn1locxgdkchn" path="res://Assets/Treasury/optional items/key_of_hearts.png" id="14_knchb"]
+[ext_resource type="Texture2D" uid="uid://cls5xw78p0ejd" path="res://Assets/Treasury/optional items/saphire_pedestal.png" id="15_o0ymo"]
+[ext_resource type="Texture2D" uid="uid://bdkoh06dlim5n" path="res://Assets/Treasury/optional items/emerald_badge.png" id="16_jqxm2"]
+
+[node name="Treasury" type="Node2D"]
+script = ExtResource("1_vyri0")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(961, 542.267)
+scale = Vector2(0.936523, 0.797221)
+texture = ExtResource("2_mrhim")
+metadata/_edit_lock_ = true
+
+[node name="Inventory" parent="." instance=ExtResource("3_ghijj")]
+offset_left = -2.0
+offset_top = 4.0
+offset_right = -2.0
+offset_bottom = 4.0
+metadata/_edit_lock_ = true
+
+[node name="Characters" parent="." instance=ExtResource("4_pc8us")]
+metadata/_edit_lock_ = true
+
+[node name="EmeraldOfCatontia" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(569, 192)
+scale = Vector2(0.178013, 0.167411)
+texture = ExtResource("5_m30hi")
+script = ExtResource("6_u1f6r")
+metadata/_edit_lock_ = true
+
+[node name="GoldenApple" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(496, 510)
+scale = Vector2(0.137277, 0.133929)
+texture = ExtResource("7_s660o")
+script = ExtResource("6_u1f6r")
+
+[node name="TheHeartStone" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(1251, 807)
+rotation = 2.61799
+scale = Vector2(0.152184, 0.187579)
+texture = ExtResource("8_7p15p")
+script = ExtResource("6_u1f6r")
+
+[node name="GoldenChalice2" type="Sprite2D" parent="."]
+position = Vector2(390, 623)
+scale = Vector2(0.315848, 0.263393)
+texture = ExtResource("9_y6u6b")
+metadata/_edit_lock_ = true
+
+[node name="GoldBar1" type="Sprite2D" parent="."]
+position = Vector2(1609, 935)
+rotation = 0.261799
+scale = Vector2(0.415405, 0.352706)
+texture = ExtResource("10_56rqj")
+metadata/_edit_lock_ = true
+
+[node name="JeweledChalice1" type="Sprite2D" parent="."]
+position = Vector2(1656, 522)
+scale = Vector2(0.389509, 0.310268)
+texture = ExtResource("11_cfm8g")
+metadata/_edit_lock_ = true
+
+[node name="SaphirePedestal" type="Sprite2D" parent="."]
+position = Vector2(888, 854)
+scale = Vector2(0.225168, 0.258371)
+texture = ExtResource("15_o0ymo")
+metadata/_edit_lock_ = true
+
+[node name="EmeraldBadge" type="Sprite2D" parent="."]
+position = Vector2(1459, 721)
+scale = Vector2(0.229911, 0.241071)
+texture = ExtResource("16_jqxm2")
+metadata/_edit_lock_ = true
+
+[node name="KeyOfHearts" type="Sprite2D" parent="."]
+position = Vector2(808, 884)
+rotation = 0.523599
+scale = Vector2(0.130734, 0.157478)
+texture = ExtResource("14_knchb")
