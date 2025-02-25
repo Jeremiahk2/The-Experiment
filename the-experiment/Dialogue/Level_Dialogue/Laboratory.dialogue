@@ -1,0 +1,66 @@
+~ welcome
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Welcome to my amazing laboratory Seline my dear...
+Eryndor: I know it's not much, but soon we will create something truly magnificent. Now onward you shall go to retrieve some rare items for me.
+do state.speaker_changed.emit("Seline")
+Seline: Uhh sure. What was it that I needed to retrieve again?
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Ahh yes, to start we can either get a single Moon Crest Flower or the Tome of Conduits. Whichever you think would be easier to acquire.
+do state.speaker_changed.emit("Seline")
+- Find the Tome of Conduits
+	Seline: I think it will be easier to find the Tome.
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: Well in that case I suppose you should head to the library.
+	do state.speaker_changed.emit("Seline")
+	Seline: The library... got it. I'll be back as soon as I find it.
+	do state.speaker_changed.emit("done")
+	do state.change_current_scene("Library")
+- Find the Moon Crest Flower
+	Seline: I think I've seen a Moon Crest Flower before.
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: Really? Well I bet you will be able to spot one pretty easily in the garden room then.
+	do state.speaker_changed.emit("Seline")
+	Seline: Sounds like a good idea. I'll head that way.
+	do state.speaker_changed.emit("done")
+	do state.change_current_scene("Garden")
+=> END
+
+~ tome_dialogue
+do state.speaker_changed.emit("Eryndor")
+Eyrndor: Looks like you've found the Tome of Conduits!!!
+do state.speaker_changed.emit("Seline")
+Seline: Yeah it was in the library like you said.
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Fantastic. This will tell me all I need to know about the siphoning of magic and how to imbue such powerful into this ancient recreation.
+Eyrndor: Now I will need two items that should be easily obtainable from the Alchemy classroom. Basilisks Venom and a Potion of Vitality.
+do state.speaker_changed.emit("Seline")
+Seline: Basislisks Venom and a Potion of Vitality. Got it!
+do state.speaker_changed.emit("done")
+do state.change_current_scene("Alchemy")
+=> END
+
+moon_dialogue
+do state.speaker_changed.emit("Eryndor")
+Eyrndor: Ahhh the beautiful yet elusive Moon Crest Flower. It looks like you what you were looking for after all.
+do state.speaker_changed.emit("Seline")
+Seline: Well of course. I did say I had seen one before didn't I?
+do state.speaker_changed.emit("Eryndor")
+Eryndor: I suppose you did. I knew I had picked the perfect person to be my assistant.
+Eyrndor: Now I will need two items that should be easily obtainable from the Alchemy classroom. Basilisks Venom and a Potion of Vitality.
+do state.speaker_changed.emit("Seline")
+Seline: Basislisks Venom and a Potion of Vitality. Got it!
+do state.speaker_changed.emit("done")
+do state.change_current_scene("Alchemy")
+=> END
+
+~ level_1_intro
+Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
+Nathan: Here are some choices.
+- First one
+	Nathan: You picked the first one.
+- Second one
+	Nathan: You picked the second one.
+- Start again => level_1_intro
+- End the conversation => END
+Nathan: For more information see the online documentation.
+=> END

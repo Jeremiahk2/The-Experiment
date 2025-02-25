@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkskp6vrav6s4"]
+
+[ext_resource type="Script" path="res://Scripts/Levels/Laboratory.gd" id="1_tv67h"]
+[ext_resource type="PackedScene" uid="uid://d2mjalvkw6cxo" path="res://Scenes/Utilities/Inventory.tscn" id="3_itjxi"]
+[ext_resource type="Texture2D" uid="uid://8lheovdvmkov" path="res://Assets/Laboratory/laboratory_scene.png" id="4_0i11b"]
+[ext_resource type="PackedScene" uid="uid://bmyv0q2xvvogv" path="res://Scenes/Utilities/characters.tscn" id="4_a87vf"]
+
+[node name="Laboratory" type="Node2D"]
+script = ExtResource("1_tv67h")
+
+[node name="Inventory" parent="." instance=ExtResource("3_itjxi")]
+z_index = 5
+metadata/_edit_lock_ = true
+
+[node name="Characters" parent="." instance=ExtResource("4_a87vf")]
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(0.9375, 0.803571)
+texture = ExtResource("4_0i11b")
+metadata/_edit_lock_ = true

@@ -47,6 +47,7 @@ script = ExtResource("5_x7dw6")
 metadata/_edit_lock_ = true
 
 [node name="BookOfConduits" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(474, 611)
 rotation = 0.0872665
 scale = Vector2(0.138393, 0.102679)

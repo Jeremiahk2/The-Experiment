@@ -1,3 +1,10 @@
+~ conduits
+do state.speaker_changed.emit("Seline")
+Seline: Ahah. This looks like The Book of Conduits that Eryndor was talking about. Better head back to the Lab.
+do state.speaker_changed.emit("done")
+do state.change_current_scene("Laboratory")
+=> END
+
 ~ start
 Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
 Nathan: Here are some choices.

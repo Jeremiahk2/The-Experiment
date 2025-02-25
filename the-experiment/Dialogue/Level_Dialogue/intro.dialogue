@@ -15,10 +15,10 @@ Seline: What exactly is the experiment?
 do state.speaker_changed.emit("Eryndor")
 Eryndor: Well it is top secret so you can't go telling everyone about this, but some say there was once an ancient artifact that allowed people to harness the great magical potential from within them and use it to do all sorts of things. The ability to heal wounds some thought to be fatal. The chance to share your magical power with those around you to increase lifespan ten fold, and much more.
 Eryndor: Sadly, however, this artifact was lost to the ages. That was until Ezekeil Grimborne discovered an ancient tome holding the secrets to all the ingredients needed to craft one.
-Eryndor: The first two items I will need are The Tome of Conduits and a single Moonveil Lotus Flower. I figure you could likely find such items in the library and Garden. Would you mind retrieving them for me?
+Eryndor: Now if you be interested in assisting me would you kindly follow me into me laboratory?
 do state.speaker_changed.emit("Seline")
-Seline: A book and a flower huh? That doesn't sound too difficult...
+Seline: Uhh sure. Lead the way!
 do state.speaker_changed.emit("Eryndor")
-Eryndor: Excellent! Bring them to my laboratory when you have found them both.
-do state.speaker_changed.emit("done")
+Eryndor: Excellent! Right this way!
+do state.change_current_scene("Laboratory")
 => END

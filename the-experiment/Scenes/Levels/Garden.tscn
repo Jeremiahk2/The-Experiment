@@ -143,6 +143,7 @@ texture = ExtResource("19_iujue")
 script = ExtResource("20_72vkm")
 
 [node name="MoonCrestFlower" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(1722.75, 613.25)
 scale = Vector2(0.228795, 0.188616)
 texture = ExtResource("20_323h0")
