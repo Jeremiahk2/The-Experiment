@@ -1,15 +1,15 @@
 ~ basilisk
+do state.set_basilisk_flag(true)
 do state.speaker_changed.emit("Seline")
 Seline: This looks like a nice vile of Basilisks Venom.
 do state.speaker_changed.emit("done")
-do state.set_basilisk_flag(true)
 => END
 
 ~ vitality
+do state.set_vitality_flag(true)
 do state.speaker_changed.emit("Seline")
 Seline: Found that Vitality Potion that Eryndor needed.
 do state.speaker_changed.emit("done")
-do state.set_vitality_flag(true)
 => END
 
 ~ complete

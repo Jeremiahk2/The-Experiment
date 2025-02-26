@@ -1,22 +1,33 @@
 ~ moon_crest
+do state.set_moon_crest_flag(true)
 do state.speaker_changed.emit("Seline")
 Seline: This looks like the Moon Crest Flower.
+if state.found_blood_flower and state.found_moon_crest_flower and state.found_royal_flower
+	Seline: Looks like I've got all of the flowers. I should head back to the lab.
+	do state.speaker_changed.emit("done")
+	do state.change_current_scene("Laboratory")
 do state.speaker_changed.emit("done")
-do state.set_moon_crest_flag(true)
 => END
 
 ~ blood_flower
+do state.set_blood_flower_flag(true)
 do state.speaker_changed.emit("Seline")
 Seline: I found the Blood Flower that Eryndor mentioned using for the creation of the artifact. Should I keep looking for the Royal Flower though?
 Seline: In all the times I have read about the Blood Flower I have never once seen it used for anything that could help or heal people. Makes me wonder how this artifact he is creating really works...
+if state.found_blood_flower and state.found_moon_crest_flower and state.found_royal_flower
+	Seline: Looks like I've got all of the flowers. I should head back to the lab.
+	do state.speaker_changed.emit("done")
+	do state.change_current_scene("Laboratory")
 do state.speaker_changed.emit("done")
-do state.set_blood_flower_flag(true)
 => END
 
 ~ royal_flower
-do state.speaker_changed.emit("Seline")
-Seline: Perfect. It's the Royal Flower that Eryndor wanted. I should head back to the Lab.
-do state.speaker_changed.emit("done")
 do state.set_royal_flower_flag(true)
-do state.change_current_scene("Laboratory")
+do state.speaker_changed.emit("Seline")
+Seline: Perfect. It's the Royal Flower that Eryndor wanted.
+if state.found_blood_flower and state.found_moon_crest_flower and state.found_royal_flower
+	Seline: Looks like I've got all of the flowers. I should head back to the lab.
+	do state.speaker_changed.emit("done")
+	do state.change_current_scene("Laboratory")
+do state.speaker_changed.emit("done")
 => END

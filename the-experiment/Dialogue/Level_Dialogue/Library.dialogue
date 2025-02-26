@@ -1,7 +1,7 @@
 ~ conduits
+do state.set_tome_flag(true)
 do state.speaker_changed.emit("Seline")
 Seline: Ahah. This looks like The Book of Conduits that Eryndor was talking about.
-do state.set_tome_flag(true)
 if state.found_tome_of_conduits and state.found_griffin_feather
 	Seline: I've found the Griffin Feather and the Tome of Conduits. Time to head back to the Lab.
 	do state.speaker_changed.emit("done")
@@ -10,9 +10,9 @@ do state.speaker_changed.emit("done")
 => END
 
 ~ griffin
+do state.set_griffin_flag(true)
 do state.speaker_changed.emit("Seline")
 Seline: This looks like a Griffin Feather to me.
-do state.set_griffin_flag(true)
 if state.found_tome_of_conduits and state.found_griffin_feather
 	Seline: I've found the Griffin Feather and the Tome of Conduits. Time to head back to the Lab.
 	do state.speaker_changed.emit("done")
