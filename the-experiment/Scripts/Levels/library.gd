@@ -11,4 +11,9 @@ func _process(delta: float) -> void:
 		state.conduits_dialogue_shown = true
 		# set the global tome flag to true
 		DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Library.dialogue"), "conduits")
+
+	if !state.griffin_dialogue_shown and !%GriffinFeather:
+		state.griffin_dialogue_shown = true
+		# set the global tome flag to true
+		DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Library.dialogue"), "griffin")
 	pass

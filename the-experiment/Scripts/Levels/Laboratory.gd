@@ -10,10 +10,7 @@ func _ready() -> void:
         match state.visit_count:
 			# Collected Library items
             1:
-                if state.found_tome_of_conduits:
-                    DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Laboratory.dialogue"), "tome_dialogue")
-                elif state.found_moon_crest_flower:
-                    DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Laboratory.dialogue"), "moon_dialogue")
+                DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Laboratory.dialogue"), "library_complete")
 			# Collected Alchemy Class items
             2:
                 DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Laboratory.dialogue"), "alchemy_lab_complete")

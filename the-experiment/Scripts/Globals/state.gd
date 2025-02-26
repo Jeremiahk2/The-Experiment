@@ -10,6 +10,7 @@ var visit_count = 0
 # global variables for dialogues shown
 # library
 var conduits_dialogue_shown = false
+var griffin_dialogue_shown = false
 # alchemy
 var vitality_dialogue_shown = false
 var basilisk_dialogue_shown = false
@@ -27,6 +28,7 @@ var treasury_complete_dialogue_shown = false
 # global variables for keeping track of which items have been collected
 # library
 var found_tome_of_conduits = false
+var found_griffin_feather = false
 # alchemy
 var found_vitality_potion = false
 var found_basilisk_venom = false
@@ -95,3 +97,8 @@ func set_golden_apple_flag(apple: bool) -> void:
 func set_heart_stone_flag(heart_stone: bool) -> void:
 	found_heart_stone = heart_stone
 	print("Heart Stone: ", found_heart_stone)
+
+# setter for griffin feather flag
+func set_griffin_flag(feather: bool) -> void:
+	found_griffin_feather = feather
+	print("Griffin Feather: ", found_griffin_feather)

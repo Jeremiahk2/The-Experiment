@@ -33,11 +33,9 @@ metadata/_edit_lock_ = true
 [node name="Characters" parent="." instance=ExtResource("4_7ur2p")]
 
 [node name="DemonStone1" type="Sprite2D" parent="."]
-unique_name_in_owner = true
 position = Vector2(1389, 677)
 scale = Vector2(0.128348, 0.137277)
 texture = ExtResource("5_wdyox")
-script = ExtResource("5_x7dw6")
 metadata/_edit_lock_ = true
 
 [node name="GriffinFeather" type="Sprite2D" parent="."]

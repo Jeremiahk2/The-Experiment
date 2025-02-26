@@ -1,19 +1,21 @@
 ~ conduits
 do state.speaker_changed.emit("Seline")
-Seline: Ahah. This looks like The Book of Conduits that Eryndor was talking about. Better head back to the Lab.
-do state.speaker_changed.emit("done")
+Seline: Ahah. This looks like The Book of Conduits that Eryndor was talking about.
 do state.set_tome_flag(true)
-do state.change_current_scene("Laboratory")
+if state.found_tome_of_conduits and state.found_griffin_feather
+	Seline: I've found the Griffin Feather and the Tome of Conduits. Time to head back to the Lab.
+	do state.speaker_changed.emit("done")
+	do state.change_current_scene("Laboratory")
+do state.speaker_changed.emit("done")
 => END
 
-~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+~ griffin
+do state.speaker_changed.emit("Seline")
+Seline: This looks like a Griffin Feather to me.
+do state.set_griffin_flag(true)
+if state.found_tome_of_conduits and state.found_griffin_feather
+	Seline: I've found the Griffin Feather and the Tome of Conduits. Time to head back to the Lab.
+	do state.speaker_changed.emit("done")
+	do state.change_current_scene("Laboratory")
+do state.speaker_changed.emit("done")
 => END
