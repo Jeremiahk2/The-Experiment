@@ -159,7 +159,7 @@ elif state.used_griffin_feather and state.used_blood_flower
 	Eryndor: No it definitely should not...
 	do state.speaker_changed.emit("done")
 	Before Eryndor or Seline could move the artifact suddenly exploded leaving both of them unconscious and a trail of smoke leading out of the Lab.
-do state.resetGame
+do state.resetGame()
 => END
 
 ~ level_1_intro

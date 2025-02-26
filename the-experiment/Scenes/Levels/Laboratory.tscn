@@ -9,7 +9,7 @@
 script = ExtResource("1_tv67h")
 
 [node name="Inventory" parent="." instance=ExtResource("3_itjxi")]
-z_index = 5
+z_index = 19
 metadata/_edit_lock_ = true
 
 [node name="Characters" parent="." instance=ExtResource("4_a87vf")]
