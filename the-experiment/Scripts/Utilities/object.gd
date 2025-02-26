@@ -16,4 +16,6 @@ func _input(event):
 		var mouse_pos = get_global_mouse_position()
 		if get_rect().has_point(to_local(mouse_pos)):
 			inventory.add_object(self.texture)
-			queue_free()  # Removes the object
+			queue_free()
+			self.free()  # Removes the object
+			state.item_get.emit()

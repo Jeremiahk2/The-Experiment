@@ -2,6 +2,7 @@ extends Node
 
 signal change_texture
 signal speaker_changed(speaker: String)
+signal item_get
 
 # global variables for keeping track of the game state
 var first_visit = true
