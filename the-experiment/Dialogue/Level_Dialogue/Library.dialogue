@@ -2,6 +2,8 @@
 do state.set_tome_flag(true)
 do state.speaker_changed.emit("Seline")
 Seline: Ahah. This looks like The Book of Conduits that Eryndor was talking about.
+Seline: Wonder what he needs this for. I guess the ability to transfer magical power from one thing to another would make sense.
+Seline: Would the Griffin Feather be the better item though?
 if state.found_tome_of_conduits and state.found_griffin_feather
 	Seline: I've found the Griffin Feather and the Tome of Conduits. Time to head back to the Lab.
 	do state.speaker_changed.emit("done")
@@ -13,6 +15,7 @@ do state.speaker_changed.emit("done")
 do state.set_griffin_flag(true)
 do state.speaker_changed.emit("Seline")
 Seline: This looks like a Griffin Feather to me.
+Seline: I have heard that Griffin Feather's are known for their explosive and transformative properties. Weird that Eryndor wants to use it on an artifact centered around healing and helping people.
 if state.found_tome_of_conduits and state.found_griffin_feather
 	Seline: I've found the Griffin Feather and the Tome of Conduits. Time to head back to the Lab.
 	do state.speaker_changed.emit("done")

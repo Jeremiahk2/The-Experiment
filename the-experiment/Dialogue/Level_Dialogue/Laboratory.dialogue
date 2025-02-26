@@ -5,36 +5,28 @@ Eryndor: I know it's not much, but soon we will create something truly magnifice
 do state.speaker_changed.emit("Seline")
 Seline: Uhh sure. What was it that I needed to retrieve again?
 do state.speaker_changed.emit("Eryndor")
-Eryndor: Ahh yes, to start we will need The Tome of Conduits and a Griffin's Feather. I believe you should be able to find both items within the library.
+Eryndor: Ahh yes, to start we will either need The Tome of Conduits or a Griffin's Feather. I believe you should be able to find both items within the library.
 do state.speaker_changed.emit("Seline")
-Seline: Griffin's Feather and The Tome of Conduits. Sounds simple enough.
+Seline: Griffin's Feather or The Tome of Conduits. Sounds simple enough.
 do state.speaker_changed.emit("done")
 do state.change_current_scene("Library")
 => END
 
 ~ library_complete
-
-~ tome_dialogue
 do state.speaker_changed.emit("Eryndor")
-Eyrndor: Looks like you've found the Tome of Conduits!!!
+Eryndor: Ah Seline you have returned.
+Eryndor: Where you able to find The Tome of Conduits or a Griffin Feather?
 do state.speaker_changed.emit("Seline")
-Seline: Yeah it was in the library lik e you said.
-do state.speaker_changed.emit("Eryndor")
-Eryndor: Fantastic! This will tell me all I need to know about the siphoning of magic and how to imbue such powerful into this ancient recreation.
-Eyrndor: Now I will need two items that should be easily obtainable from the Alchemy classroom. Basilisks Venom and a Potion of Vitality.
-do state.speaker_changed.emit("Seline")
-Seline: Basislisks Venom and a Potion of Vitality. Got it!
-do state.speaker_changed.emit("done")
-do state.change_current_scene("Alchemy")
-=> END
-
-~ moon_dialogue
-do state.speaker_changed.emit("Eryndor")
-Eyrndor: Ahhh the beautiful yet elusive Moon Crest Flower. It looks like you what you were looking for after all.
-do state.speaker_changed.emit("Seline")
-Seline: Well of course. I did say I had seen one before didn't I?
-do state.speaker_changed.emit("Eryndor")
-Eryndor: I suppose you did. I knew I had picked the perfect person to be my assistant.
+- Give Tome of Conduits
+	do state.set_used_tome_flag(true)
+	Seline: Yes here is the Tome of Conduits. I found it in the library like you said.
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: The Tome of Conduits. This will work wonderfully. Thank you Seline.
+- Give Griffin's Feather
+	do state.set_used_griffin_flag(true)
+	Seline: I was able to find the Griffin's Feather in the library.
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: Griffin's Feather's. They just radiant with power don't they.
 Eyrndor: Now I will need two items that should be easily obtainable from the Alchemy classroom. Basilisks Venom and a Potion of Vitality.
 do state.speaker_changed.emit("Seline")
 Seline: Basislisks Venom and a Potion of Vitality. Got it!
@@ -50,13 +42,13 @@ Eryndor: Well done, and with that we are halfway complete with our little experi
 do state.speaker_changed.emit("Seline")
 Seline: Alright so what's next on the list?
 do state.speaker_changed.emit("Eryndor")
-Eryndor: Next we can either use a Blood Flower or a Royal Flower. Either should do so whichever is easier for you to find should work.
+Eryndor: Next we can either use a Blood Flower, a Royal Flower, or a Moon Crest Flower. You should be able to locate all of them within the Garden room. Any one of the three should suffice.
 do state.speaker_changed.emit("Seline")
-Seline: Those are two completely different ingredients with a vast difference in effect. Does it really not matter which we use?
+Seline: Those are three completely different ingredients with a vast difference in effect. Does it really not matter which we use?
 do state.speaker_changed.emit("Eryndor")
 Eryndor: Ahh Seline my dear this is why I am the scientist and you the assistant. Let me do the thinking and you the fetching. Now off you go.
 do state.speaker_changed.emit("Seline")
-Seline: Umm...okay I should be able to find what we need in the indoor Garden.
+Seline: Umm...okay I should be able to find what we need.
 do state.speaker_changed.emit("done")
 do state.change_current_scene("Garden")
 => END
@@ -65,11 +57,36 @@ do state.change_current_scene("Garden")
 do state.speaker_changed.emit("Eryndor")
 Eryndor: Seline, welcome back. I take it you have found one of the flowers I was in need of?
 do state.speaker_changed.emit("Seline")
-Seline: Yes I have found them.
-do state.speaker_changed.emit("Eryndor")
-Eryndor: Excellent. Now I need you to head to the treasury in search of some interesting items.
+- Give Blood Flower
+	do state.set_used_blood_flower_flag(true)
+	Seline: Yes, here is the Blood Flower that you requested.
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: The Blood Flower. Often considered one of the most dangerous plants. One pedal is powerful enough to kill 40 men. Did you know that?
+	do state.speaker_changed.emit("Seline")
+	Seline: Uhh no. I wasn't aware of that fact. Sounds kind of dangerous...
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: Oh it can be, but not to worry. I know exactly what I am doing.
+- Give Royal Flower
+	do state.set_used_royal_flower_flag(true)
+	Seline: Of course. Here is the Royal Flower.
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: Well I will admite I was hoping you would find one of the other two, but this should do just fine.
+	do state.speaker_changed.emit("Seline")
+	Seline: Oh...Uh I'm sorry.
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: No worries my dear. On to the next item.
+- Give Moon Crest Flower
+	do state.set_used_moon_crest_flag(true)
+	Seline: Yes, here is the Moon Crest Flower.
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: The Moon Crest Flower. What a magnificent looking flower. You know they say it glows on nights of a full moon. It's true power is still said to be a mystery.
+	Eryndor: Some say one of the old god's who once resided here left to live on the moon and this was their parting gift to the world. Of course that is just what the legends say.
+Eryndor: Alright and lastly I will need a few items from the Treasury room.
+Eryndor: I will need the Emerald of Catontia, The Heart Stone, and one Golden Apple.
 do state.speaker_changed.emit("Seline")
-Seline: Treasury. Got it.
+Seline: Emerald of Catontia, The Heart Stone, and a Golden Apple from the treasury room. Got it!
+do state.speaker_changed.emit("Eryndor")
+Eryndor: Good luck Seline. I shall await your return...
 do state.speaker_changed.emit("done")
 do state.change_current_scene("Treasury")
 => END
@@ -77,7 +94,72 @@ do state.change_current_scene("Treasury")
 ~ treasury_complete
 do state.speaker_changed.emit("Eryndor")
 Eryndor: Amazing work Seline. Now with that our little experiment has come to it's conclusion!
-Eryndor: And so have you my dear....BUuuHAahahaHAhahahahaHAhahahaHA!
+Eryndor: And 3.....2......1 Aha!
+if state.used_moon_crest_flower
+	Eryndor: This...this is not right???
+	Eryndor: Something is wrong!
+	do state.speaker_changed.emit("Seline")
+	Seline: What is wrong?
+	do state.speaker_changed.emit("done")
+	Suddenly the artifact began to float into the air and glowed a light blue color as it began to spin around.
+	A loud sharp noise could be heard all throughout the school as students began to scream and through their hands to their ears.
+	Seline and Eryndor had both fallen to the ground and were knocked unconscious.
+elif state.used_tome_of_conduits and state.used_blood_flower
+	Eryndor: Finally it is complete...wait what It should not be floating?
+	Eryndor: What is going on?
+	do state.speaker_changed.emit("Seline")
+	Seline: Uhh Eryndor what is it doing?
+	do state.speaker_changed.emit("done")
+	Before Eryndor or Seline could react the artifact that was now floating in front of them began to emit a strange blue light that slowly turned red.
+	do state.speaker_changed.emit("Seline")
+	Seline: Ahhhh It hurts. What is going on?
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: Yes it is working. Finally your power will be MINE!
+	do state.speaker_changed.emit("done")
+	Seline looked at Eryndor with a face of confusion and terror as she could feel her on strengh being ripped from her body.
+	Just as she fell to the ground she was able to hit the artifact and send it flying into the wall creating a small explosion that blew a chest sized hole into the Laboratory wall.
+	The room filled with smoke as Seline lost conscisnous.
+elif state.used_tome_of_conduits and state.used_royal_flower
+	Eryndor: Now with the artifact complete it is time to test it.
+	do state.speaker_changed.emit("done")
+	Eryndor quickly grabbed the orb shaped artifact and pressed it against Selines arm only for nothing to happen.
+	do state.speaker_changed.emit("Seline")
+	Seline: Uhh Eryndor what are you doing?
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: What? What is this?! It isn't working!!!
+	Eryndor: No No No!!!
+	Eyrndor: You should be on the ground powerless by now!?
+	do state.speaker_changed.emit("Seline")
+	Seline: What? What are you talking about?!
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: It was you! You must have given me one of the wrong items! You tricked me! I will make you pay for this!
+	do state.speaker_changed.emit("done")
+	Eryndor grabbed Seline and pressed her against the Laboratory door. Just as she felt his grip tighten around her neck she was able to grab a beaker from the table on the left and crush it over Eryndor's head.
+	do state.speaker_changed.emit("Seline")
+	Seline: Oh no. what have I done...
+elif state.used_griffin_feather and state.used_royal_flower
+	Just as Eryndor had finished tinkering with the artifact there was a soft blue glow eminating from it.
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: Yes finally...
+	do state.speaker_changed.emit("done")
+	Suddenly the blue glow dissappeared. Leaving Eryndor confused.
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: What the... Why you little...
+	do state.speaker_changed.emit("done")
+	Just as Eryndor reached to grab the artifact there was a giant white flash that blinded Seline.
+	do state.speaker_changed.emit("Seline")
+	Seline: Uhhh what was that... Eryndor? Where did he go? And where is the artifact?!
+	do state.speaker_changed.emit("done")
+	Both Eryndor and the artifact had vanished...
+elif state.used_griffin_feather and state.used_blood_flower
+	Just as Eryndor had backed away from the completed artifact it started to glow a yellow color as it began to levitate in front of the two.
+	do state.speaker_changed.emit("Seline")
+	Seline: Should it be floating?
+	do state.speaker_changed.emit("Eryndor")
+	Eryndor: No it definitely should not...
+	do state.speaker_changed.emit("done")
+	Before Eryndor or Seline could move the artifact suddenly exploded leaving both of them unconscious and a trail of smoke leading out of the Lab.
+do state.resetGame
 => END
 
 ~ level_1_intro

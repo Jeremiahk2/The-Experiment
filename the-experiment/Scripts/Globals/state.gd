@@ -41,6 +41,13 @@ var found_emerald_of_catontia = false
 var found_golden_apple = false
 var found_heart_stone = false
 
+# global variables for items used in artifact (for branching endings)
+var used_tome_of_conduits = false
+var used_griffin_feather = false
+var used_moon_crest_flower = false
+var used_blood_flower = false
+var used_royal_flower = false
+
 var scene_changer = preload("res://Scenes/Utilities/scene_transition.tscn")
 
 @onready var scenes = {
@@ -49,6 +56,7 @@ var scene_changer = preload("res://Scenes/Utilities/scene_transition.tscn")
 	"Laboratory": preload("res://Scenes/Levels/Laboratory.tscn"),
 	"Library": preload("res://Scenes/Levels/Library.tscn"),
 	"Treasury": preload("res://Scenes/Levels/Treasury.tscn"),
+	"MainMenu": preload("res://Scenes/Menus/MainMenu.tscn"),
 	}
 
 #IF REFERENCING FROM DIALOGUE, NEXT LINE MUST BE => END
@@ -102,3 +110,61 @@ func set_heart_stone_flag(heart_stone: bool) -> void:
 func set_griffin_flag(feather: bool) -> void:
 	found_griffin_feather = feather
 	print("Griffin Feather: ", found_griffin_feather)
+
+func set_used_tome_flag(tome: bool) -> void:
+	used_tome_of_conduits = tome
+	print("Used Tome of Conduits: ", used_tome_of_conduits)
+
+func set_used_griffin_flag(feather: bool) -> void:
+	used_griffin_feather = feather
+	print("Used Griffin Feather: ", used_griffin_feather)
+
+func set_used_moon_crest_flag(moon_crest: bool) -> void:	
+	used_moon_crest_flower = moon_crest
+	print("Used Moon Crest Flower: ", used_moon_crest_flower)
+
+func set_used_blood_flower_flag(blood_flower: bool) -> void:
+	used_blood_flower = blood_flower
+	print("Used Blood Flower: ", used_blood_flower)
+
+func set_used_royal_flower_flag(royal_flower: bool) -> void:
+	used_royal_flower = royal_flower
+	print("Used Royal Flower: ", used_royal_flower)
+
+func resetGame() -> void:
+	# Reset all global variables
+	first_visit = true
+	visit_count = 0
+
+	conduits_dialogue_shown = false
+	griffin_dialogue_shown = false
+	vitality_dialogue_shown = false
+	basilisk_dialogue_shown = false
+	alchemy_complete_dialogue_shown = false
+	moon_crest_dialogue_shown = false
+	blood_flower_dialogue_shown = false
+	royal_flower_dialogue_shown = false
+	emerald_catontia_dialogue_shown = false
+	golden_apple_dialogue_shown = false
+	heart_stone_dialogue_shown = false
+	treasury_complete_dialogue_shown = false
+
+	found_tome_of_conduits = false
+	found_griffin_feather = false
+	found_vitality_potion = false
+	found_basilisk_venom = false
+	found_moon_crest_flower = false
+	found_blood_flower = false
+	found_royal_flower = false
+	found_emerald_of_catontia = false
+	found_golden_apple = false
+	found_heart_stone = false
+
+	used_tome_of_conduits = false
+	used_griffin_feather = false
+	used_moon_crest_flower = false
+	used_blood_flower = false
+	used_royal_flower = false
+
+    # Change to the main menu scene
+	change_current_scene("MainMenu")
