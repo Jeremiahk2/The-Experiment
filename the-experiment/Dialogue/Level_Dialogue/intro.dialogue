@@ -1,5 +1,5 @@
 ~ start
-It was just like any regular day at Wyrmgate and Seline was spending her free time in the courtyard eating her lunch when suddenly she felt weight on her chest...
+It was just like any regular day at Wyrmgate and Seline was spending her free time in the courtyard eating her lunch when suddenly she felt a weight on her chest...
 do state.speaker_changed.emit("Eryndor")
 ????: Why Seline, just the person I was hoping to find.
 do state.speaker_changed.emit("Seline")
@@ -9,13 +9,13 @@ Eryndor: As a matter of fact I do. I have recently been overseeing an experiment
 do state.speaker_changed.emit("Seline")
 Seline: Me? I mean, I would be honored, but... why me?
 do state.speaker_changed.emit("Eryndor")
-Eryndor: You sell yourself short Seline. I've kept a good eye on every scholar that has been through Wrymgate, and I know one worth keeping around when I see them...and between the two of us there's something about the way you deal with magic that leaves all your colleagues in the dust. That is the assistant I need.
+Eryndor: You sell yourself short Seline. I've kept a close eye on every scholar that has been through Wrymgate, and I know one worth keeping around when I see them...and between the two of us there's something about the way you deal with magic that leaves all your colleagues in the dust. That is the assistant I need.
 do state.speaker_changed.emit("Seline")
 Seline: What exactly is the experiment?
 do state.speaker_changed.emit("Eryndor")
-Eryndor: Well it is top secret so you can't go telling everyone about this, but some say there was once an ancient artifact that allowed people to harness the great magical potential from within them and use it to do all sorts of things. The ability to heal wounds some thought to be fatal. The chance to share your magical power with those around you to increase lifespan ten fold, and much more.
+Eryndor: Well it is top secret so you can't go telling everyone about this, but some say there was once an ancient artifact that allowed people to harness great magical potential from within them and use it to do all sorts of things. The ability to heal wounds some thought to be fatal. The chance to share your magical power with those around you to increase their lifespan ten fold, and much more.
 Eryndor: Sadly, however, this artifact was lost to the ages. That was until Ezekeil Grimborne discovered an ancient tome holding the secrets to all the ingredients needed to craft one.
-Eryndor: Now if you be interested in assisting me would you kindly follow me into me laboratory?
+Eryndor: Now if you would be interested in assisting me would you kindly follow me into my laboratory?
 do state.speaker_changed.emit("Seline")
 Seline: Uhh sure. Lead the way!
 do state.speaker_changed.emit("Eryndor")

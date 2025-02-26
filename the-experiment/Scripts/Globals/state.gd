@@ -166,5 +166,5 @@ func resetGame() -> void:
 	used_blood_flower = false
 	used_royal_flower = false
 
-    # Change to the main menu scene
+	# Change to the main menu scene
 	change_current_scene("MainMenu")
