@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://cpor0hio5p6yu"
+path="res://.godot/imported/Treasury.dialogue-83cfe1477753dfbc338d2ea460c42bef.tres"
+
+[deps]
+
+source_file="res://Dialogue/Level_Dialogue/Treasury.dialogue"
+dest_files=["res://.godot/imported/Treasury.dialogue-83cfe1477753dfbc338d2ea460c42bef.tres"]
+
+[params]
+
+defaults=true

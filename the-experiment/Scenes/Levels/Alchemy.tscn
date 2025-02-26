@@ -22,7 +22,7 @@ texture = ExtResource("4_atjwx")
 metadata/_edit_lock_ = true
 
 [node name="Inventory" parent="." instance=ExtResource("3_wtbx1")]
-z_index = 1
+z_index = 7
 offset_left = -2.0
 offset_top = 4.0
 offset_right = -2.0
@@ -33,12 +33,14 @@ metadata/_edit_lock_ = true
 metadata/_edit_lock_ = true
 
 [node name="BasiliskVenom" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(1584, 677)
 scale = Vector2(0.28125, 0.294643)
 texture = ExtResource("5_1dkyb")
 script = ExtResource("6_3wob0")
 
 [node name="VitalityPotion" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(1739, 932)
 scale = Vector2(0.297921, 0.328997)
 texture = ExtResource("7_5lbnj")

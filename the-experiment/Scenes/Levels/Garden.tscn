@@ -31,7 +31,7 @@
 script = ExtResource("1_lmd46")
 
 [node name="Inventory" parent="." instance=ExtResource("3_xilyd")]
-z_index = 1
+z_index = 21
 offset_left = -2.0
 offset_top = 4.0
 offset_right = -2.0
@@ -107,6 +107,7 @@ texture = ExtResource("13_3wpuq")
 metadata/_edit_lock_ = true
 
 [node name="RoyalFlower" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(1119, 164)
 scale = Vector2(0.0580358, 0.155134)
 texture = ExtResource("14_bn3ey")
@@ -137,6 +138,7 @@ scale = Vector2(0.602197, 0.597258)
 texture = ExtResource("18_clclh")
 
 [node name="BloodFlower" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(1821, 1024)
 rotation = -0.436332
 scale = Vector2(0.378348, 0.332589)
@@ -144,6 +146,7 @@ texture = ExtResource("19_iujue")
 script = ExtResource("20_72vkm")
 
 [node name="MoonCrestFlower" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(1722.75, 613.25)
 scale = Vector2(0.228795, 0.188616)
 texture = ExtResource("20_323h0")

@@ -1,0 +1,33 @@
+~ emerald_catontia
+do state.set_emerald_flag(true)
+do state.speaker_changed.emit("Seline")
+Seline: Looks like I found that emerald.
+if state.found_emerald_of_catontia and state.found_golden_apple and state.found_heart_stone
+	Seline: I think I've got everything I needed from here. Time to bring everything back to the Lab.
+	do state.speaker_changed.emit("done")
+	do state.change_current_scene("Laboratory")
+do state.speaker_changed.emit("done")
+=> END
+
+~ golden_apple
+do state.set_golden_apple_flag(true)
+do state.speaker_changed.emit("Seline")
+Seline: Here's the Golden Apple. Wow this things a lot heavier then I thought it would be...wonder what it taste like?
+if state.found_emerald_of_catontia and state.found_golden_apple and state.found_heart_stone
+	Seline: I think I've got everything I needed from here. Time to bring everything back to the Lab.
+	do state.speaker_changed.emit("done")
+	do state.change_current_scene("Laboratory")
+do state.speaker_changed.emit("done")
+=> END
+
+~ heart_stone
+do state.set_heart_stone_flag(true)
+do state.speaker_changed.emit("Seline")
+Seline: The Heart Stone. There was some strange tugging feeling in my chest from the moment I touched this thing.
+Seline: Kind of scary.
+if state.found_emerald_of_catontia and state.found_golden_apple and state.found_heart_stone
+	Seline: I think I've got everything I needed from here. Time to bring everything back to the Lab.
+	do state.speaker_changed.emit("done")
+	do state.change_current_scene("Laboratory")
+do state.speaker_changed.emit("done")
+=> END

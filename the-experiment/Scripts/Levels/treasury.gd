@@ -9,10 +9,15 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if !state.emerald_catontia_dialogue_shown and !%EmeraldOfCatontia:
+		state.emerald_catontia_dialogue_shown = true
+		DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Treasury.dialogue"), "emerald_catontia")
 
-func updateInventory()  -> void:
-	if %EmeraldOfCatontia:
-		print("Emerald has not been found yet")
-	else:
-		print("Emerald has been found!")
+	if !state.golden_apple_dialogue_shown and !%GoldenApple:
+		state.golden_apple_dialogue_shown = true
+		DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Treasury.dialogue"), "golden_apple")
+
+	if !state.heart_stone_dialogue_shown and !%TheHeartStone:
+		state.heart_stone_dialogue_shown = true
+		DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/Level_Dialogue/Treasury.dialogue"), "heart_stone")
+	pass
